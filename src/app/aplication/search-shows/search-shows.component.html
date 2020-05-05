@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<h2>Shows Search</h2>
+<div>
+    <div>
+        <h2 align="center">TV Shows found</h2>
+        <table class="showSearch">
+            <tr class="normalRow">
+                <td>
+                    Show Id
+                </td>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Summary
+                </td>
+                <td>
+                    Cast
+                </td>
+                <td>
+                    Episode
+                </td>
+            </tr>
+            <tr *ngFor="let show of shows">
+                <td align="center">
+                    <span class="badge">{{show.id}}</span>
+                </td>
+                <td>
+                    {{show.showName}}
+                </td>
+                <td align="center">
+                    {{show.summary}}
+                </td>
+                <td align="center">
+                    {{show.showCast}}
+                </td>
+				<td>
+					{{show.episode}}
+				</td>
+            </tr>
+        </table>
+    </div>
+</div>
